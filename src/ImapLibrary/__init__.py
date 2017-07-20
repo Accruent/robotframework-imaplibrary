@@ -101,9 +101,13 @@ class ImapLibrary(object):
         Examples:
         | Delete All Emails |
         """
-        for mail in self._mails:
-            self.delete_email(mail)
-        self._imap.expunge()
+        type, data = self._imap.search(None, 'ALL')
+        if not str(data) == "[None]":
+           for mail in data[0].split():
+               self._imap.store(mail, '+FLAGS', '\DELETED')
+           self._imap.expunge()
+        else:
+           pass 
 
     def delete_email(self, email_index):
         """Delete email on given ``email_index``.
@@ -211,9 +215,14 @@ class ImapLibrary(object):
         Examples:
         | Mark All Emails As Read |
         """
-        for mail in self._mails:
-            self._imap.uid('store', mail, '+FLAGS', r'\SEEN')
-
+        type, data = self._imap.search(None, 'ALL')
+        if not str(data) == "[None]":
+           for mail in data[0].split():
+               self._imap.store(mail, '+FLAGS', r'\SEEN')
+           self._imap.expunge()
+        else:
+           pass 
+    
     def mark_as_read(self):
         """****DEPRECATED****
         Shortcut to `Mark All Emails As Read`.
