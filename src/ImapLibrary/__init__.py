@@ -350,7 +350,7 @@ class ImapLibrary(object):
         """
         if not self._is_walking_multipart(email_index):
             data = self._imap.uid('fetch', email_index, '(RFC822)')[1][0][1]
-            msg = message_from_string(data)
+            msg = message_from_string(data.decode("utf-8"))
             self._start_multipart_walk(email_index, msg)
         try:
             self._part = next(self._mp_iter)
