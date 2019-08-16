@@ -24,11 +24,10 @@ import codecs
 from os.path import abspath, dirname, join
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
+from version import VERSION
 
 LIBRARY_NAME = 'ImapLibrary'
 CWD = abspath(dirname(__file__))
-VERSION_PATH = join(CWD, 'src', LIBRARY_NAME, 'version.py')
-exec(compile(open(VERSION_PATH).read(), VERSION_PATH, 'exec'))
 
 with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
     LONG_DESCRIPTION = reader.read()
@@ -41,7 +40,7 @@ tests_require = [
 
 setup(
     name='robotframework-%s' % LIBRARY_NAME.lower(),
-    version=VERSION,  # pylint: disable=undefined-variable  # noqa
+    version=VERSION,
     description='A IMAP email testing library for Robot Framework',
     long_description=LONG_DESCRIPTION,
     url='https://github.com/rickypc/robotframework-%s' % LIBRARY_NAME.lower(),
