@@ -19,9 +19,7 @@
 IMAP Library - a IMAP email testing library.
 """
 
-from sys import path
-path.append('src')
-from ImapLibrary import ImapLibrary
+from src.ImapLibrary import ImapLibrary
 import mock
 import unittest
 

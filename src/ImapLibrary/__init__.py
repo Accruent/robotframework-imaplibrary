@@ -24,14 +24,11 @@ from imaplib import IMAP4, IMAP4_SSL
 from re import findall
 from codecs import decode
 from time import sleep, time
-try:
-    from urllib.request import urlopen
-except ImportError:
-    from urllib2 import urlopen
+from urllib.request import urlopen
 from builtins import str as ustr
-from ImapLibrary.version import get_version
+from version import VERSION
 
-__version__ = get_version()
+__version__ = VERSION
 
 
 class ImapLibrary(object):
