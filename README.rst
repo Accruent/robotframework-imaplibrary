@@ -1,7 +1,8 @@
 IMAP email testing library for Robot Framework
 ==============================================
 
-|Docs| |Version| |Status| |Python| |Download| |License|
+[![Build Status](https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master)](https://travis-ci.org/Accruent/robotframework-imaplibrary)
+[![Coverage Status](https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master)](https://coveralls.io/github/Accruent/robotframework-imaplibrary?branch=master)
 
 Introduction
 ------------
