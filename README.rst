@@ -1,8 +1,7 @@
 IMAP email testing library for Robot Framework
 ==============================================
 
-[![Build Status](https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master)](https://travis-ci.org/Accruent/robotframework-imaplibrary)
-[![Coverage Status](https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master)](https://coveralls.io/github/Accruent/robotframework-imaplibrary?branch=master)
+|Status| |Coverage| |License|
 
 Introduction
 ------------
@@ -220,21 +219,12 @@ Documentation and other similar content are provided under `Creative Commons Att
 .. _Robot Framework installed: https://goo.gl/PFbWqM
 .. _Robot Framework User Guide: http://goo.gl/Q7dfPB
 .. _robotframework-imaplibrary: https://goo.gl/q66LcA
-.. |Docs| image:: https://img.shields.io/badge/docs-latest-brightgreen.svg
-    :target: https://goo.gl/ntRuxC
-    :alt: Keyword Documentation
-.. |Version| image:: https://img.shields.io/pypi/v/robotframework-imaplibrary.svg
-    :target: https://goo.gl/q66LcA
-    :alt: Package Version
-.. |Status| image:: https://img.shields.io/pypi/status/robotframework-imaplibrary.svg
-    :target: https://goo.gl/q66LcA
+.. |Coverage| image:: https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master
+    :target: https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master
+    :alt: Coverage
+.. |Status| image:: https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master
+    :target: https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master
     :alt: Development Status
-.. |Python| image:: https://img.shields.io/pypi/pyversions/robotframework-imaplibrary.svg
-    :target: https://goo.gl/sXzgao
-    :alt: Python Version
-.. |Download| image:: https://img.shields.io/pypi/dm/robotframework-imaplibrary.svg
-    :target: https://goo.gl/q66LcA
-    :alt: Monthly Download
 .. |License| image:: https://img.shields.io/pypi/l/robotframework-imaplibrary.svg
     :target: https://goo.gl/qpvnnB
     :alt: License
