@@ -33,6 +33,12 @@ exec(compile(open(VERSION_PATH).read(), VERSION_PATH, 'exec'))
 with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
     LONG_DESCRIPTION = reader.read()
 
+tests_require = [
+    'mock',
+    'coveralls',
+    'unittest'
+]
+
 setup(
     name='robotframework-%s' % LIBRARY_NAME.lower(),
     version=VERSION,  # pylint: disable=undefined-variable  # noqa
