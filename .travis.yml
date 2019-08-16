@@ -11,7 +11,7 @@ install:
 
 script:
     # run tests
-    - pytest --cov src -v
+    - pytest --cov src/ImapLibrary/ test/test_imaplibrary.py
 
 after_success:
   - coveralls
