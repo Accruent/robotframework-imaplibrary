@@ -24,14 +24,11 @@ from imaplib import IMAP4, IMAP4_SSL
 from re import findall
 from codecs import decode
 from time import sleep, time
-try:
-    from urllib.request import urlopen
-except ImportError:
-    from urllib2 import urlopen
+from urllib.request import urlopen
 from builtins import str as ustr
-from ImapLibrary.version import get_version
+from version import VERSION
 
-__version__ = get_version()
+__version__ = VERSION
 
 
 class ImapLibrary(object):
@@ -350,7 +347,7 @@ class ImapLibrary(object):
         """
         if not self._is_walking_multipart(email_index):
             data = self._imap.uid('fetch', email_index, '(RFC822)')[1][0][1]
-            msg = message_from_string(data)
+            msg = message_from_string(data.decode("utf-8"))
             self._start_multipart_walk(email_index, msg)
         try:
             self._part = next(self._mp_iter)

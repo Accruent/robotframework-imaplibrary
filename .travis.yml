@@ -1,0 +1,17 @@
+language: python
+
+python:
+    - "3.6"
+
+install:
+    # install python requirements
+    - pip install .
+    - pip install python-coveralls
+    - pip install pytest-cov
+
+script:
+    # run tests
+    - pytest --cov src/ImapLibrary/ test/test_imaplibrary.py
+
+after_success:
+  - coveralls
