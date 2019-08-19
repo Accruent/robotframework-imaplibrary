@@ -220,10 +220,10 @@ Documentation and other similar content are provided under `Creative Commons Att
 .. _Robot Framework User Guide: http://goo.gl/Q7dfPB
 .. _robotframework-imaplibrary: https://goo.gl/q66LcA
 .. |Coverage| image:: https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master
-    :target: https://coveralls.io/repos/github/Accruent/robotframework-imaplibrary/badge.svg?branch=master
+    :target: https://coveralls.io/github/Accruent/robotframework-imaplibrary
     :alt: Coverage
 .. |Status| image:: https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master
-    :target: https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master
+    :target: https://travis-ci.org/Accruent/robotframework-imaplibrary
     :alt: Development Status
 .. |License| image:: https://img.shields.io/pypi/l/robotframework-imaplibrary.svg
     :target: https://goo.gl/qpvnnB
