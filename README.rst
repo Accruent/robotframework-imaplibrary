@@ -1,7 +1,7 @@
 IMAP email testing library for Robot Framework
 ==============================================
 
-|Status| |Coverage| |License|
+|Status| |Coverage| |Codefactor| |License|
 
 Introduction
 ------------
@@ -225,6 +225,9 @@ Documentation and other similar content are provided under `Creative Commons Att
 .. |Status| image:: https://travis-ci.org/Accruent/robotframework-imaplibrary.svg?branch=master
     :target: https://travis-ci.org/Accruent/robotframework-imaplibrary
     :alt: Development Status
+.. |Codefactor| image:: https://www.codefactor.io/repository/github/accruent/robotframework-imaplibrary/badge
+   :target: https://www.codefactor.io/repository/github/accruent/robotframework-imaplibrary
+   :alt: CodeFactor
 .. |License| image:: https://img.shields.io/pypi/l/robotframework-imaplibrary.svg
     :target: https://goo.gl/qpvnnB
     :alt: License
