@@ -65,7 +65,6 @@ class ImapLibrary(object):
     PORT_SECURE = 993
     FOLDER = 'INBOX'
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
-    ROBOT_LIBRARY_VERSION = __version__
 
     def __init__(self):
         """ImapLibrary can be imported without argument.
