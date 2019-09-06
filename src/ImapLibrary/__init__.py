@@ -26,9 +26,6 @@ from codecs import decode
 from time import sleep, time
 from urllib.request import urlopen
 from builtins import str as ustr
-from version import VERSION
-
-__version__ = VERSION
 
 
 class ImapLibrary(object):
