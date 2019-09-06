@@ -28,6 +28,8 @@ from version import VERSION
 
 LIBRARY_NAME = 'ImapLibrary'
 CWD = abspath(dirname(__file__))
+VERSION_PATH = join(CWD, 'src', LIBRARY_NAME, 'version.py')
+exec(compile(open(VERSION_PATH).read(), VERSION_PATH, 'exec'))
 
 with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
     LONG_DESCRIPTION = reader.read()
