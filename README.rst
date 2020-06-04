@@ -63,7 +63,7 @@ The recommended installation method is using pip_:
 
 .. code:: console
 
-    pip install robotframework-imaplibrary
+    pip install git+https://github.com/accruent/robotframework-imaplibrary
 
 The main benefit of using ``pip`` is that it automatically installs all
 dependencies needed by the library. Other nice features are easy upgrading
@@ -71,7 +71,7 @@ and support for un-installation:
 
 .. code:: console
 
-    pip install --upgrade robotframework-imaplibrary
+    pip install --upgrade git+https://github.com/accruent/robotframework-imaplibrary
     pip uninstall robotframework-imaplibrary
 
 Notice that using ``--upgrade`` above updates both the library and all
